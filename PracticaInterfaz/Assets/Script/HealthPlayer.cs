@@ -21,7 +21,7 @@ public class HealthPlayer : MonoBehaviour
         sliderHealth.value = MAX_HEALTH / 2;
     }
 
-    public void health(int value)
+    public void Health(int value)
     {
         sliderHealth.value += value;
     }
