@@ -6,7 +6,7 @@ public class ButtonAnimation : MonoBehaviour
 {    
     public void ScaleUp()
     {
-        LeanTween.scale(gameObject, new Vector3(1.2f, 1.2f, 1.2f), 0.2f);
+        LeanTween.scale(gameObject, Vector3.one * 1.2f, 0.2f);
     } 
 
     public void ScaleDown()

@@ -16,7 +16,7 @@ public class IntroAnimation : MonoBehaviour
         //oculto el logo de manera inmediata
         LeanTween.moveLocalX(logo, -900f, 0f);
         //hago aparecer el logo
-        LeanTween.moveLocalX(logo, 1.0014e-05f, 2.5f).setEaseSpring().setOnComplete(Latido);
+        LeanTween.moveLocalX(logo, 1.0014e-05f, 2.5f).setEaseOutBack().setOnComplete(Latido);
 
         //moverlo localmente en ambos ejes
         //LeanTween.moveLocal(logo, new Vector3(600f, 40f, 0f), 2f);
@@ -25,7 +25,8 @@ public class IntroAnimation : MonoBehaviour
     void Latido()
     {
         LeanTween.scale(logo, Vector3.one, 0.5f).setEaseSpring().setOnComplete( () => {
-            LeanTween.alphaCanvas(gameObject.GetComponent<CanvasGroup>(), 0.0f, 1.5f).setOnComplete(Desactivar);
+            LeanTween.scale(logo, Vector3.one*3, 2.5f);
+            LeanTween.alphaCanvas(gameObject.GetComponent<CanvasGroup>(), 0.0f, 2f).setOnComplete(Desactivar);
         });
     }
 
