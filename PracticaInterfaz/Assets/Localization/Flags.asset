@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4db626ad063b13545924a9839ac5fa83, type: 3}
+  m_Name: Flags
+  m_EditorClassIdentifier: 
+  m_SharedTableData: {fileID: 11400000, guid: 790c7b70718101641983c86cdfe27435, type: 2}
+  m_Tables:
+  - {fileID: 11400000, guid: 8371e7b51093b444cb92c3e380e15ee5, type: 2}
+  - {fileID: 11400000, guid: e14c8e75b5a46b24998b809ce5f52144, type: 2}
+  - {fileID: 11400000, guid: e860561d0fc652544bbdf7b094842640, type: 2}
+  - {fileID: 11400000, guid: 94a38c40918803646ad61df4608f53d2, type: 2}
+  - {fileID: 11400000, guid: 750211e8d13c55042a55c688584b4edf, type: 2}
+  m_Extensions: []
+  m_Group: Asset Table
+  references:
+    version: 2
+    RefIds: []
