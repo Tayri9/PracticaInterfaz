@@ -7,10 +7,10 @@ onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = false
 scopes = {
-	"last_search.B655092D" = "st:exit"
+	"last_search.B655092D" = "st:user"
 	"OpenInspectorPreview.B655092D" = "0"
 	"currentGroup.B655092D" = "all"
-	"last_search.B655095F" = "at:flag"
+	"last_search.B655095F" = "at:fla"
 	"OpenInspectorPreview.B655095F" = "0"
 	"currentGroup.B655095F" = "all"
 }

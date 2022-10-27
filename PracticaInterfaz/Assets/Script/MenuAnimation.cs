@@ -28,13 +28,13 @@ public class MenuAnimation : MonoBehaviour
         void Botones()
         {            
             //LeanTween.scale(buttonGroup, Vector3.one, 0f);
-            LeanTween.scale(buttonNewGame, Vector3.one, 1.5f).setEaseSpring().setOnComplete( () =>
+            LeanTween.scale(buttonNewGame, Vector3.one, 1f).setEaseSpring().setOnComplete( () =>
             {
-                LeanTween.scale(buttonLoadGame, Vector3.one, 1.5f).setEaseSpring().setOnComplete(() =>
+                LeanTween.scale(buttonLoadGame, Vector3.one, 1f).setEaseSpring().setOnComplete(() =>
                 {
-                    LeanTween.scale(buttonOptions, Vector3.one, 1.5f).setEaseSpring().setOnComplete(() =>
+                    LeanTween.scale(buttonOptions, Vector3.one, 1f).setEaseSpring().setOnComplete(() =>
                     {
-                        LeanTween.scale(buttonExit, Vector3.one, 1.5f).setEaseSpring().setOnComplete(Latido);
+                        LeanTween.scale(buttonExit, Vector3.one, 1f).setEaseSpring().setOnComplete(Latido);
                     });
                 });
             });
