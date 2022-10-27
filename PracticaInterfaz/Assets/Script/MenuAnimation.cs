@@ -5,7 +5,7 @@ using UnityEngine;
 public class MenuAnimation : MonoBehaviour
 {
     [SerializeField]
-    GameObject logo, buttonGroup, buttonNewGame, buttonLoadGame, buttonOptions, buttonExit;
+    GameObject logo, buttonGroup, buttonNewGame, buttonLoadGame, buttonOptions, buttonExit, flag;
 
     private void OnEnable()
     {
@@ -15,16 +15,12 @@ public class MenuAnimation : MonoBehaviour
         LeanTween.scale(buttonLoadGame, Vector3.zero, 0f);
         LeanTween.scale(buttonOptions, Vector3.zero, 0f);
         LeanTween.scale(buttonExit, Vector3.zero, 0f);
+        LeanTween.scale(flag, Vector3.zero, 0f);
         //LeanTween.moveLocalY(buttonGroup, -495f, 0f);
 
         LeanTween.moveLocalY(logo, 209.33f, 1.5f).setEaseSpring().setOnComplete(Botones);
         //LeanTween.moveLocalY(buttonGroup, -48.5417f, 1.5f).setEaseSpring();
-
-        void Latido()
-        {
-            LeanTween.scale(logo, Vector3.one, 1f).setEaseSpring().setLoopPingPong();
-        }
-
+                
         void Botones()
         {            
             //LeanTween.scale(buttonGroup, Vector3.one, 0f);
@@ -34,12 +30,19 @@ public class MenuAnimation : MonoBehaviour
                 {
                     LeanTween.scale(buttonOptions, Vector3.one, 1f).setEaseSpring().setOnComplete(() =>
                     {
-                        LeanTween.scale(buttonExit, Vector3.one, 1f).setEaseSpring().setOnComplete(Latido);
+                        LeanTween.scale(buttonExit, Vector3.one, 1f).setEaseSpring().setOnComplete(() =>
+                        {
+                            LeanTween.scale(flag, Vector3.one, 1f).setEaseSpring().setOnComplete(Latido);
+                        });
                     });
                 });
             });
-
         }
-    }
 
+        void Latido()
+        {
+            LeanTween.scale(logo, Vector3.one, 1f).setEaseSpring().setLoopPingPong();
+        }
+
+    }
 }

@@ -5,10 +5,7 @@ using UnityEngine;
 public class IntroAnimation : MonoBehaviour
 {
     [SerializeField]
-    GameObject logo;
-
-    [SerializeField]
-    GameObject menu;
+    GameObject logo, menu;
 
     // Start is called before the first frame update
     void Start()
