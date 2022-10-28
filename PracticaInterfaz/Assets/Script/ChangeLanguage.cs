@@ -11,6 +11,17 @@ public class ChangeLanguage : MonoBehaviour
     private void Start()
     {
         langAvailables = LocalizationSettings.AvailableLocales.Locales.Count;
+        SelectCurrentLang();
+    }
+
+    void SelectCurrentLang()
+    {
+        UnityEngine.Localization.Locale searcher = LocalizationSettings.AvailableLocales.Locales[language];
+        while (searcher != LocalizationSettings.SelectedLocale && language < langAvailables)
+        {
+            language++;
+            searcher = LocalizationSettings.AvailableLocales.Locales[language];
+        }
     }
     void Awakee()
     {
