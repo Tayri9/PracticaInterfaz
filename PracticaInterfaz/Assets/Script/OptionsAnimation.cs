@@ -21,28 +21,28 @@ public class OptionsAnimation : MonoBehaviour
 
     private void OnEnable()
     {
-        LeanTween.moveLocalY(textOptions, -400f, 0f);
-        LeanTween.moveLocalY(language, -400f, 0f);
-        LeanTween.moveLocalY(buttonBack, -400f, 0f);
+        LeanTween.moveLocalY(textOptions, -2000f, 0f);
+        LeanTween.moveLocalY(language, -2000f, 0f);
+        LeanTween.moveLocalY(buttonBack, -2000f, 0f);
 
-        LeanTween.moveLocalX(logo, -900f, 0.5f).setEaseInBack();
-        LeanTween.moveLocalX(flag, 900f, 0.5f).setEaseInBack();
-        LeanTween.moveLocalX(buttonGroup, -900f, 0.5f).setEaseInBack().setOnComplete(CanvasOptionsAnimation);
+        LeanTween.moveLocalX(logo, -2000f, 0.5f).setEaseInBack();
+        LeanTween.moveLocalX(flag, 2000f, 0.5f).setEaseInBack();
+        LeanTween.moveLocalX(buttonGroup, -2000f, 0.5f).setEaseInBack().setOnComplete(CanvasOptionsAnimation);
     }
 
     private void CanvasOptionsAnimation()
     {
-        LeanTween.moveLocalY(textOptions, 209.33f, 0.5f).setEaseSpring();
-        LeanTween.moveLocalY(language, 42.54001f, 0.5f).setEaseSpring();
-        LeanTween.moveLocalY(buttonBack, -219.14f, 0.5f).setEaseSpring();
+        LeanTween.moveLocalY(textOptions, 302f, 0.5f).setEaseSpring();
+        LeanTween.moveLocalY(language, -1.9073e-05f, 0.5f).setEaseSpring();
+        LeanTween.moveLocalY(buttonBack, -368.56f, 0.5f).setEaseSpring();
         LeanTween.alphaCanvas(gameObject.GetComponent<CanvasGroup>(), 1f, 0.5f);
     }
 
     private void OnDisable()
     {
-        LeanTween.moveLocalX(logo, -426.5f, 0.5f).setEaseOutBack();
-        LeanTween.moveLocalX(flag, 553.5f, 0.5f).setEaseOutBack();
-        LeanTween.moveLocalX(buttonGroup, -426.5f, 0.5f).setEaseOutBack();
+        LeanTween.moveLocalX(logo, -674.43f, 0.5f).setEaseOutBack();
+        LeanTween.moveLocalX(flag, 895f, 0.5f).setEaseOutBack();
+        LeanTween.moveLocalX(buttonGroup, -674.43f, 0.5f).setEaseOutBack();
     }
 
     public void ButtonOption()
@@ -54,7 +54,7 @@ public class OptionsAnimation : MonoBehaviour
     {
         LeanTween.moveLocalY(textOptions, -400f, 0.5f).setEaseInBack();
         LeanTween.moveLocalY(language, -400f, 0.5f).setEaseInBack();
-        LeanTween.moveLocalY(buttonBack, -400f, 0.5f).setEaseInBack();
+        LeanTween.moveLocalY(buttonBack, -700f, 0.5f).setEaseInBack();
         LeanTween.alphaCanvas(gameObject.GetComponent<CanvasGroup>(), 0f, 0.7f).setOnComplete(Disable);
     }
 

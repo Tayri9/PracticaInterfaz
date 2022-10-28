@@ -35,11 +35,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 27704789250048
-    m_Localized: s
+    m_Localized: Lingua
     m_Metadata:
       m_Items: []
   - m_Id: 37620077768704
-    m_Localized: s
+    m_Localized: Di ritorno
+    m_Metadata:
+      m_Items: []
+  - m_Id: 406544627740672
+    m_Localized: Italiano
     m_Metadata:
       m_Items: []
   references:

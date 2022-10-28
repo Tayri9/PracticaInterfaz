@@ -4,7 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/EjemploAnimacion.unity
+    guid: 3f7c22d7fa4c1c04da41f3f4508af4aa
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: e9cc0cc3582adad45a608e8d2c1f8a56, type: 2}
     com.unity.localization.settings: {fileID: 11400000, guid: a2ac3cb0b13c486499b089f1c8607c89, type: 2}

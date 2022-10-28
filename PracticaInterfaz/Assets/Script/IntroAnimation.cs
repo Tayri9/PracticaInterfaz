@@ -11,7 +11,7 @@ public class IntroAnimation : MonoBehaviour
     void Start()
     {
         //oculto el logo de manera inmediata
-        LeanTween.moveLocalX(logo, -900f, 0f);
+        LeanTween.moveLocalX(logo, -2000f, 0f);
         //hago aparecer el logo
         LeanTween.moveLocalX(logo, 1.0014e-05f, 2.5f).setEaseOutBack().setOnComplete(Latido);
 

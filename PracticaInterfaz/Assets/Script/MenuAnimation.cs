@@ -9,7 +9,7 @@ public class MenuAnimation : MonoBehaviour
 
     private void OnEnable()
     {
-        LeanTween.moveLocalY(logo, -353f, 0f);
+        LeanTween.moveLocalY(logo, -2000f, 0f);
         //LeanTween.scale(buttonGroup, Vector3.zero, 0f);
         LeanTween.scale(buttonNewGame, Vector3.zero, 0f);
         LeanTween.scale(buttonLoadGame, Vector3.zero, 0f);
@@ -18,7 +18,7 @@ public class MenuAnimation : MonoBehaviour
         LeanTween.scale(flag, Vector3.zero, 0f);
         //LeanTween.moveLocalY(buttonGroup, -495f, 0f);
 
-        LeanTween.moveLocalY(logo, 209.33f, 1.5f).setEaseSpring().setOnComplete(Botones);
+        LeanTween.moveLocalY(logo, 302f, 1.5f).setEaseSpring().setOnComplete(Botones);
         //LeanTween.moveLocalY(buttonGroup, -48.5417f, 1.5f).setEaseSpring();
                 
         void Botones()
@@ -44,5 +44,10 @@ public class MenuAnimation : MonoBehaviour
             LeanTween.scale(logo, Vector3.one, 1f).setEaseSpring().setLoopPingPong();
         }
 
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }

@@ -39,6 +39,10 @@ MonoBehaviour:
     m_Key: buttonBack
     m_Metadata:
       m_Items: []
+  - m_Id: 406544627740672
+    m_Key: textSelectedLanguage
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
